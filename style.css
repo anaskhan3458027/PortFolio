@@ -109,7 +109,7 @@ section .content{
 
 .main-content h1{
     font-size: clamp(2rem, 1rem + 5vw, 3rem);
-    color: rgb(50, 48, 48);
+    color: rgb(63, 37, 168);
 }
 
 .main-content span{
@@ -119,8 +119,8 @@ section .content{
 }
 
 .main-content p{
-    font-size: clamp(1.5rem, 1.0rem + 5vw, 1.2rem);
-    color: rgb(75, 70, 70);
+    font-size: clamp(1.0rem, 1.5rem + 5vw, 1.0rem);
+    color: rgb(24, 20, 20);
 }
 
 .main-content .buttons{
