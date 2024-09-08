@@ -1,0 +1,231 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a0a5b9;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+nav{
+    z-index: 4;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+nav .nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-container .logo h1{
+    color: white;
+}
+
+.nav-container .links a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover{
+    color: #ff521b;
+    text-shadow: 1px 1px #ff521b;
+}
+
+nav svg{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    fill: white;
+    cursor: pointer;
+    display: none;
+}
+
+nav .dropdown{
+    position: absolute;
+    top: 0;
+    background-color: #191f37;
+    width: 100%;
+    height: auto;
+    transform: translateY(-300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s linear;
+}
+
+nav .dropdown a{
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.2s linear;
+}
+
+.dropdown a:hover{
+    background-color:  black;
+    color: white;
+}
+
+/* Section Starts */
+
+section{
+    width: 100%;
+    height: 90vh;
+}
+
+section .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content .main-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+}
+
+.main-content h1{
+    font-size: clamp(2rem, 1rem + 5vw, 3rem);
+    color: white;
+}
+
+.main-content span{
+    font-size: clamp(1.5rem, 1rem + 5vw, 4rem);
+    color:#a84527;
+    font-weight: 700;
+}
+
+.main-content p{
+    font-size: clamp(1rem, 1rem + 5vw, 1.2rem);
+    color: white;
+}
+
+.main-content .buttons{
+    width: 70%;
+    margin: 5%;
+    height: 5.5vh;
+}
+
+.buttons button{
+    cursor: pointer;
+    width: 190px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ff521b;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: 0.2s linear;
+}
+
+.buttons button:hover{
+    box-shadow: 2px 2px 30px #ff521b;
+}
+
+.content .images{
+    width: 50%;
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.images img{
+    margin-top: 40px;
+    width: 500px;
+    filter: drop-shadow(0 0 20px #248dc2);
+}
+
+@media (max-width:708px) {
+    .links{
+        display: none;
+    }
+   
+    nav svg{
+        display: block;
+    }
+
+    .nav-container .logo{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .content{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .images img{
+        width: 120%;
+        margin-bottom: 10px;
+    }
+
+    .content .main-content {
+        max-width: 300px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-content p{
+        text-align: center;
+    }
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column; /* Change to column for vertical layout */
+    gap: 15px; /* Space between icons */
+    justify-content: center; /* Center items vertically */
+    background-color:#a0a5b9; /* Optional: background color for better visibility */
+    padding: 10px 0;
+    height: 100%; /* Take full height */
+    width: auto; /* Adjust width automatically based on content */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem; /* Responsive font size */
+    transition: transform 0.3s;
+}
+
+.sidebar a:hover {
+    transform: scale(1.2);
+}
+
+.sidebar img {
+    width: 2rem; /* Responsive image size */
+    height: 2rem;
+}
