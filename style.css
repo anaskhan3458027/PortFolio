@@ -119,8 +119,8 @@ section .content{
 }
 
 .main-content p{
-    font-size: clamp(1rem, 1rem + 5vw, 1.2rem);
-    color: white;
+    font-size: clamp(0.1rem, 1rem + 5vw, 1.2rem);
+    color: rgb(75, 70, 70);
 }
 
 .main-content .buttons{
@@ -155,7 +155,7 @@ section .content{
 }
 
 .images img{
-    margin-top: 40px;
+    margin-top: 10px;
     width: 500px;
     filter: drop-shadow(0 0 20px #248dc2);
 }
