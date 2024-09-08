@@ -31,15 +31,15 @@ nav .nav-container{
 }
 
 .nav-container .logo h1{
-    color: white;
+    color: rgb(137, 8, 8);
 }
 
 .nav-container .links a{
-    font-size: 0.1rem;
-    color: rgb(72, 66, 66);
+    font-size: 1.5rem;
+    color: rgb(16, 15, 15);
     text-decoration: none;
     margin: 0 20px;
-    transition: 0.2s linear;
+    transition: 1.2s linear;
 }
 
 .nav-container .links a:hover{
@@ -59,7 +59,7 @@ nav svg{
 nav .dropdown{
     position: absolute;
     top: 0;
-    background-color: #191f37;
+    background-color: #44507f;
     width: 100%;
     height: auto;
     transform: translateY(-300px);
@@ -119,7 +119,7 @@ section .content{
 }
 
 .main-content p{
-    font-size: clamp(0.1rem, 0.1rem + 5vw, 1.2rem);
+    font-size: clamp(1.5rem, 1.0rem + 5vw, 1.2rem);
     color: rgb(75, 70, 70);
 }
 
