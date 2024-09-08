@@ -35,8 +35,8 @@ nav .nav-container{
 }
 
 .nav-container .links a{
-    font-size: 1.2rem;
-    color: white;
+    font-size: 0.1rem;
+    color: rgb(72, 66, 66);
     text-decoration: none;
     margin: 0 20px;
     transition: 0.2s linear;
@@ -109,7 +109,7 @@ section .content{
 
 .main-content h1{
     font-size: clamp(2rem, 1rem + 5vw, 3rem);
-    color: white;
+    color: rgb(50, 48, 48);
 }
 
 .main-content span{
